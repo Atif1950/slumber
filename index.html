@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Slumber</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f0fdfa;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+      color: #111827;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(13,148,136,.12);
+      max-width: 480px;
+      width: 100%;
+      padding: 40px 36px;
+      text-align: center;
+    }
+
+    .logo-wrap {
+      width: 72px; height: 72px;
+      background: #0d9488;
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 36px;
+    }
+
+    h1 { font-size: 26px; font-weight: 800; color: #0d9488; margin-bottom: 6px; }
+    .tagline { font-size: 14px; color: #6b7280; margin-bottom: 24px; }
+
+    .message {
+      font-size: 15px; line-height: 1.7; color: #374151;
+      background: #f0fdfa; border-radius: 10px;
+      padding: 18px 20px; margin-bottom: 28px;
+      text-align: left;
+    }
+    .message strong { color: #0d9488; }
+
+    .options-title {
+      font-size: 12px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .06em; color: #9ca3af; margin-bottom: 14px;
+    }
+
+    .option-btn {
+      display: flex; align-items: center; gap: 14px;
+      width: 100%; padding: 14px 18px;
+      border-radius: 10px; border: 2px solid #e5e7eb;
+      background: #fff; cursor: pointer;
+      text-decoration: none; color: #111827;
+      margin-bottom: 10px;
+      transition: border-color .15s, background .15s;
+    }
+    .option-btn:hover { border-color: #0d9488; background: #f0fdfa; }
+
+    .option-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .kofi-icon { background: #ff5e5b22; }
+    .payoneer-icon { background: #ff6c0022; }
+    .crypto-icon { background: #f59e0b22; }
+
+    .option-text { text-align: left; }
+    .option-name { font-weight: 700; font-size: 15px; }
+    .option-desc { font-size: 12px; color: #6b7280; margin-top: 1px; }
+
+    .privacy-note {
+      font-size: 12px; color: #9ca3af; margin-top: 24px; line-height: 1.5;
+    }
+    .privacy-note a { color: #0d9488; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="logo-wrap">🌙</div>
+    <h1>Slumber</h1>
+    <p class="tagline">Rest your tabs. Reclaim your RAM.</p>
+
+    <div class="message">
+      Slumber is <strong>free</strong> because useful tools shouldn't spy on you to make money.<br><br>
+      No ads. No analytics. No subscription — ever.<br><br>
+      If it's saved you time or RAM, a coffee goes a long way. Thank you either way. ☕
+    </div>
+
+    <p class="options-title">Choose a way to support</p>
+
+    <a href="https://ko-fi.com/slumbertabsuspender" target="_blank" rel="noopener" class="option-btn">
+      <div class="option-icon kofi-icon">☕</div>
+      <div class="option-text">
+        <div class="option-name">Ko-fi</div>
+        <div class="option-desc">One-time or recurring — card, Google Pay, Apple Pay</div>
+      </div>
+    </a>
+
+    <a href="https://www.payoneer.com/request-payment/[YOUR_PAYONEER_LINK]" target="_blank" rel="noopener" class="option-btn">
+      <div class="option-icon payoneer-icon">💳</div>
+      <div class="option-text">
+        <div class="option-name">Payoneer</div>
+        <div class="option-desc">Direct bank transfer — any amount</div>
+      </div>
+    </a>
+
+    <a href="https://chromewebstore.google.com/detail/[EXTENSION_ID]/reviews" target="_blank" rel="noopener" class="option-btn">
+      <div class="option-icon crypto-icon">⭐</div>
+      <div class="option-text">
+        <div class="option-name">Leave a review</div>
+        <div class="option-desc">Free — helps more people find Slumber</div>
+      </div>
+    </a>
+
+    <p class="privacy-note">
+      Slumber makes zero network requests and collects no data.<br>
+      <a href="https://atif1950.github.io/slumber/privacy" target="_blank">Privacy policy</a>
+    </p>
+
+  </div>
+</body>
+</html>
