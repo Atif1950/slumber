@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Slumber</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px; line-height: 1.7; color: #111827;
+      background: #f8fafc; min-height: 100vh; padding: 48px 20px 80px;
+    }
+
+    .page { max-width: 680px; margin: 0 auto; }
+
+    /* Header */
+    .header { display: flex; align-items: center; gap: 14px; margin-bottom: 36px; }
+    .logo-wrap {
+      width: 48px; height: 48px;
+      background: #0d9488;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; flex-shrink: 0;
+    }
+    .header-text h1 { font-size: 24px; font-weight: 700; }
+    .header-text p  { font-size: 13px; color: #6b7280; margin-top: 2px; }
+
+    /* Section cards */
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px 28px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.07);
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 17px; font-weight: 700; color: #111827;
+      margin-bottom: 12px;
+    }
+    h3 {
+      font-size: 14px; font-weight: 600; color: #374151;
+      margin: 20px 0 8px;
+    }
+    p { color: #374151; margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    /* Green badge */
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #ecfdf5; color: #065f46;
+      border: 1px solid #a7f3d0;
+      border-radius: 20px; padding: 4px 12px;
+      font-size: 13px; font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    /* Never-do list */
+    .never-list { list-style: none; padding: 0; }
+    .never-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 9px 0; border-bottom: 1px solid #f3f4f6;
+      color: #374151; font-size: 14px;
+    }
+    .never-list li:last-child { border-bottom: none; }
+    .never-list li::before {
+      content: '✕';
+      color: #ef4444; font-weight: 700; font-size: 13px;
+      flex-shrink: 0; margin-top: 2px;
+    }
+
+    /* Data stored list */
+    .data-list { list-style: none; padding: 0; }
+    .data-list li {
+      padding: 10px 0; border-bottom: 1px solid #f3f4f6;
+      font-size: 14px;
+    }
+    .data-list li:last-child { border-bottom: none; }
+    .data-key {
+      font-family: 'Courier New', monospace;
+      font-size: 12px; background: #e5e7eb;
+      padding: 1px 6px; border-radius: 4px;
+      color: #374151; margin-right: 4px;
+    }
+    .data-where {
+      display: inline-block;
+      font-size: 11px; font-weight: 600;
+      background: #eff6ff; color: #1d4ed8;
+      padding: 1px 7px; border-radius: 10px;
+      margin-left: 6px; vertical-align: middle;
+    }
+    .data-where.local { background: #f5f3ff; color: #6d28d9; }
+    .data-desc { display: block; color: #6b7280; font-size: 13px; margin-top: 3px; }
+
+    /* Permissions table */
+    .perm-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .perm-table td { padding: 9px 10px; vertical-align: top; }
+    .perm-table tr { border-bottom: 1px solid #f3f4f6; }
+    .perm-table tr:last-child { border-bottom: none; }
+    .perm-name {
+      font-family: 'Courier New', monospace;
+      font-size: 12px; white-space: nowrap;
+      background: #e5e7eb; padding: 2px 7px;
+      border-radius: 4px; color: #374151;
+      display: inline-block;
+    }
+    .perm-table td:first-child { width: 130px; }
+
+    /* Contact */
+    .contact-link { color: #0d9488; text-decoration: none; font-weight: 500; }
+    .contact-link:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      text-align: center; font-size: 12px; color: #9ca3af;
+      margin-top: 40px;
+    }
+    footer a { color: #0d9488; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-wrap">🌙</div>
+      <div class="header-text">
+        <h1>Privacy Policy</h1>
+        <p>Slumber — Chrome Extension &nbsp;·&nbsp; Effective date: May 2026</p>
+      </div>
+    </div>
+
+    <!-- Short summary -->
+    <div class="card">
+      <span class="badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Zero data leaves your device
+      </span>
+      <p>
+        Slumber is a local-only extension. It has no server, makes no network requests,
+        and never transmits any information about you, your tabs, or your browsing to
+        anyone — not even to us.
+      </p>
+      <p>
+        Everything the extension stores lives entirely in Chrome's local storage on
+        your computer. You can export or delete it at any time from
+        <strong>Settings → Advanced → Privacy &amp; Safety</strong>.
+      </p>
+    </div>
+
+    <!-- What we never do -->
+    <div class="card">
+      <h2>What Slumber never does</h2>
+      <ul class="never-list">
+        <li>Collect analytics, telemetry, or usage statistics of any kind</li>
+        <li>Make any network requests — Slumber works 100% offline</li>
+        <li>Read, store, or transmit page content, form values, or passwords</li>
+        <li>Modify or redirect your URLs (except in opt-in Mode B, locally only)</li>
+        <li>Upload your browsing history, tab titles, or URLs to any server</li>
+        <li>Share any data with third parties — there are no third parties</li>
+        <li>Request the <code>&lt;all_urls&gt;</code> broad host permission</li>
+        <li>Use cookies, fingerprinting, or any cross-site tracking</li>
+      </ul>
+    </div>
+
+    <!-- What is stored -->
+    <div class="card">
+      <h2>What data is stored — and where</h2>
+      <p>All data is stored locally in Chrome. Nothing is ever transmitted.</p>
+
+      <h3>Chrome Sync storage <span style="font-weight:400; color:#6b7280; font-size:13px">(synced across your signed-in devices, never sent to us)</span></h3>
+      <ul class="data-list">
+        <li>
+          <span class="data-key">settings</span>
+          <span class="data-where">sync</span>
+          <span class="data-desc">Your preferences: inactivity timeout, suspension mode, feature toggles.</span>
+        </li>
+        <li>
+          <span class="data-key">tabExceptions</span>
+          <span class="data-where">sync</span>
+          <span class="data-desc">Exact URLs you've marked "never suspend". Stored separately from settings to stay within Chrome's 8 KB per-key sync limit.</span>
+        </li>
+        <li>
+          <span class="data-key">domainRules</span>
+          <span class="data-where">sync</span>
+          <span class="data-desc">Per-domain timeout overrides you've configured in Site Rules.</span>
+        </li>
+      </ul>
+
+      <h3>Chrome Local storage <span style="font-weight:400; color:#6b7280; font-size:13px">(device-only, never synced, never transmitted)</span></h3>
+      <ul class="data-list">
+        <li>
+          <span class="data-key">tabState</span>
+          <span class="data-where local">local</span>
+          <span class="data-desc">Last-active timestamps and form-input flags per tab ID. Used only to decide when to suspend. Cleared when Chrome restarts.</span>
+        </li>
+        <li>
+          <span class="data-key">stats</span>
+          <span class="data-where local">local</span>
+          <span class="data-desc">Suspension counts and estimated MB saved, today and all-time. Never includes URLs or titles.</span>
+        </li>
+        <li>
+          <span class="data-key">detailedStats</span>
+          <span class="data-where local">local</span>
+          <span class="data-desc">Per-domain suspension counts for the Stats page. Stores only hostnames (e.g. "youtube.com"), never full URLs or page titles.</span>
+        </li>
+        <li>
+          <span class="data-key">recentSuspensions</span>
+          <span class="data-where local">local</span>
+          <span class="data-desc">Ring buffer of the last 50 suspended tabs (URL, title, favicon URL, timestamp). Displayed in the popup and Options. You can clear it at any time.</span>
+        </li>
+        <li>
+          <span class="data-key">donationPrompt</span>
+          <span class="data-where local">local</span>
+          <span class="data-desc">Tracks whether you've responded to the optional support prompt (accepted, dismissed, or "never ask"). Never sent anywhere.</span>
+        </li>
+        <li>
+          <span class="data-key">ratingPromptShown</span>
+          <span class="data-where local">local</span>
+          <span class="data-desc">Boolean. Set to true after you've dismissed the one-time review prompt.</span>
+        </li>
+        <li>
+          <span class="data-key">installDate</span>
+          <span class="data-where local">local</span>
+          <span class="data-desc">Timestamp of first popup open. Used only to delay the donation prompt until 7 days after install.</span>
+        </li>
+        <li>
+          <span class="data-key">debugLog</span>
+          <span class="data-where local">local</span>
+          <span class="data-desc">Optional debug event log (off by default). Contains suspension/restore events with timestamps — no page content or URLs in the event payloads.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Permissions -->
+    <div class="card">
+      <h2>Permissions — plain English</h2>
+      <p>Chrome shows these permissions on install. Here is exactly what each one is used for.</p>
+      <table class="perm-table">
+        <tbody>
+          <tr>
+            <td><span class="perm-name">tabs</span></td>
+            <td>Read each tab's URL, active state, pinned state, and audio state to decide whether to suspend it. Slumber never reads page content through this permission.</td>
+          </tr>
+          <tr>
+            <td><span class="perm-name">storage</span></td>
+            <td>Save your settings locally and via Chrome sync. All data stays on your device(s).</td>
+          </tr>
+          <tr>
+            <td><span class="perm-name">alarms</span></td>
+            <td>Schedule a check every minute to see if any tabs have been inactive long enough to suspend. No network call is made during this check.</td>
+          </tr>
+          <tr>
+            <td><span class="perm-name">idle</span></td>
+            <td>Detect when your system becomes active again so tab timestamps are refreshed and recently-used tabs are not immediately re-suspended.</td>
+          </tr>
+          <tr>
+            <td><span class="perm-name">contextMenus</span></td>
+            <td>Add right-click menu options such as "Never suspend this tab" and "Suspend this tab now".</td>
+          </tr>
+          <tr>
+            <td><span class="perm-name">system.memory</span></td>
+            <td>Optionally read available system RAM. Used only when "Suspend aggressively when memory is low" is enabled in Settings. Not read otherwise.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Open source note -->
+    <div class="card">
+      <h2>Verifiable claims</h2>
+      <p>
+        Every claim on this page can be verified by inspecting the extension source code.
+        Slumber has no build step — the code you read is exactly what runs in your browser.
+        There are no minified bundles, no obfuscated scripts, and no external dependencies.
+      </p>
+      <p>
+        You can inspect the source at any time via <code>chrome://extensions</code> →
+        Slumber → "Service worker" or by opening DevTools on the popup.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy or the extension?
+        Email <a href="mailto:atifgodil7345@gmail.com" class="contact-link">atifgodil7345@gmail.com</a>.
+      </p>
+    </div>
+
+    <footer>
+      <p><a href="https://atif1950.github.io/slumber">← Back to Slumber</a></p>
+    </footer>
+
+  </div>
+</body>
+</html>
