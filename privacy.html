@@ -19,10 +19,9 @@
     .header { display: flex; align-items: center; gap: 14px; margin-bottom: 36px; }
     .logo-wrap {
       width: 48px; height: 48px;
-      background: #0d9488;
       border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 24px; flex-shrink: 0;
+      flex-shrink: 0;
+      overflow: hidden;
     }
     .header-text h1 { font-size: 24px; font-weight: 700; }
     .header-text p  { font-size: 13px; color: #6b7280; margin-top: 2px; }
@@ -125,7 +124,7 @@
 
     <!-- Header -->
     <div class="header">
-      <div class="logo-wrap">🌙</div>
+      <img class="logo-wrap" src="./slumber128x128.png" alt="Slumber icon" width="48" height="48">
       <div class="header-text">
         <h1>Privacy Policy</h1>
         <p>Slumber — Chrome Extension &nbsp;·&nbsp; Effective date: May 2026</p>
